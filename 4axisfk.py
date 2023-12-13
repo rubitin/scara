@@ -43,7 +43,7 @@ H0_2 = np.dot(H0_1, H1_2)
 H2_4 = np.dot(H2_3, H3_4)
 H0_4 = np.dot(H0_2, H2_4)
 
-print(np.matrix(H0_4))
+#print(np.matrix(H0_4))
 print(" ")
 print("X coordinate = ", H0_4[0, 3])
 print("Y coordinate = ", H0_4[1, 3])
