@@ -4,6 +4,7 @@ import math as m
 th1 = float(input("Enter a value for theta 1: "))
 th2 = float(input("Enter a value for theta 2: "))
 th3 = float(input("Enter a value for theta 3: "))
+d = float(input("Enter a value for Z stroke: "))
 
 theta1 = m.radians(th1)
 theta2 = m.radians(th2)
@@ -15,7 +16,7 @@ a2 = 380 # length of link 1
 a3 = 240 # length of link 2
 a4 = 266.2
 a5 = 219.5
-d = a1+a5-a4-Z
+#d = a1+a5-a4-Z
 
 #homogeneous transformation
 H0_1 = [[m.cos(theta1), -m.sin(theta1)*m.cos(m.radians(0)), m.sin(theta1)*m.sin(m.radians(0)), a2*m.cos(theta1)],
@@ -44,4 +45,7 @@ H0_4 = np.dot(H0_2, H2_4)
 
 print(np.matrix(H0_4))
 print(" ")
-print("d = ", d)
+print("X coordinate = ", H0_4[0, 3])
+print("Y coordinate = ", H0_4[1, 3])
+print("Z coordinate = ", H0_4[2, 3])
+print("Z stroke = ", d)
