@@ -10,7 +10,7 @@ theta1 = m.radians(th1)
 theta2 = m.radians(th2)
 theta3 = m.radians(th3)
 
-Z = 362.3 # max extension at Z = 162.3 >> meaning that Z stroke is maximum 200mm
+#Z = 362.3 # max extension at Z = 162.3 >> meaning that Z stroke is maximum 200mm
 a1 = 409
 a2 = 380 # length of link 1
 a3 = 240 # length of link 2
